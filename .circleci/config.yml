@@ -22,3 +22,9 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello"
+  deploy:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo "Deploy executed"
